@@ -18,7 +18,7 @@
 
 <ul>
 
-<li><a href="https://github.com/Juevan">Antînio Juevan</a></li>
+<li><a href="https://github.com/Juevan">Antonio Juevan</a></li>
 
 <li><a href="https://github.com/DiegoBernardes95">Diego Bernardes</a></li>
 
