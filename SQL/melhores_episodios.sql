@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 03-Fev-2023 às 04:00
+-- Tempo de geração: 04-Fev-2023 às 19:48
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.2.0
 
@@ -29,10 +29,10 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `melhores_episodios` (
   `id` int(11) NOT NULL,
-  `temporada` varchar(3) DEFAULT NULL,
-  `episodio` varchar(3) DEFAULT NULL,
+  `temporada` int(11) DEFAULT NULL,
+  `episodio` int(11) DEFAULT NULL,
   `titulo` varchar(50) DEFAULT NULL,
-  `avaliacao` varchar(3) DEFAULT NULL
+  `avaliacao` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -40,26 +40,26 @@ CREATE TABLE `melhores_episodios` (
 --
 
 INSERT INTO `melhores_episodios` (`id`, `temporada`, `episodio`, `titulo`, `avaliacao`) VALUES
-(1, '3', '9', 'The Rains of Castamere', '99'),
-(2, '5', '8', 'Hardhome', '99'),
-(3, '6', '9', 'Battle of the Bastards', '99'),
-(4, '6', '10', 'The Winds of Winter', '99'),
-(5, '7', '4', 'The Spoils of War', '98'),
-(6, '2', '9', 'Blackwater', '97'),
-(7, '4', '2', 'The Lion and the Rose', '97'),
-(8, '4', '6', 'The Laws of Gods and Men', '97'),
-(9, '4', '8', 'The Mountain and the Viper', '97'),
-(10, '4', '10', 'The Children', '97'),
-(11, '6', '5', 'The Door', '97'),
-(12, '1', '9', 'Baelor', '96'),
-(13, '3', '4', 'And Now His Watch Is Ended', '96'),
-(14, '4', '9', 'The Watchers on the Wall', '96'),
-(15, '1', '10', 'Fire and Blood', '95'),
-(16, '5', '9', 'The Dance of Dragons', '95'),
-(17, '2', '10', 'Valar Morghulis', '94'),
-(18, '6', '2', 'Home', '94'),
-(19, '7', '7', 'The Dragon and the Wolf', '94'),
-(20, '1', '6', 'A Golden Crown', '92');
+(1, 3, 9, 'The Rains of Castamere', 99),
+(2, 5, 8, 'Hardhome', 99),
+(3, 6, 9, 'Battle of the Bastards', 99),
+(4, 6, 10, 'The Winds of Winter', 99),
+(5, 7, 4, 'The Spoils of War', 98),
+(6, 2, 9, 'Blackwater', 97),
+(7, 4, 2, 'The Lion and the Rose', 97),
+(8, 4, 6, 'The Laws of Gods and Men', 97),
+(9, 4, 8, 'The Mountain and the Viper', 97),
+(10, 4, 10, 'The Children', 97),
+(11, 6, 5, 'The Door', 97),
+(12, 1, 9, 'Baelor', 96),
+(13, 3, 4, 'And Now His Watch Is Ended', 96),
+(14, 4, 9, 'The Watchers on the Wall', 96),
+(15, 1, 10, 'Fire and Blood', 95),
+(16, 5, 9, 'The Dance of Dragons', 95),
+(17, 2, 10, 'Valar Morghulis', 94),
+(18, 6, 2, 'Home', 94),
+(19, 7, 7, 'The Dragon and the Wolf', 94),
+(20, 1, 6, 'A Golden Crown', 92);
 
 --
 -- Índices para tabelas despejadas
