@@ -1,4 +1,4 @@
-# projeto-em-grupo-m4
+
 ## BANCO DE DADOS - Game of Thrones
 
 Nesse projeto a proposta é montar um dashboard com base no conjunto de dados escolhido pelo grupo, a fim de realizar uma apresentação com a exploração dos dados.
