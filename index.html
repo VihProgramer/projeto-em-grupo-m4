@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Thrones</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        .headerRow{
+            background-color: aqua;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="loading loading-hide">
+        <i class="fas fa-spinner loading-spinner"></i>
+    </div>
+    <div class="navbar">
+        <div class="logo">
+            <h1 class="tittle-logo">Game Of Thrones</h1>
+
+        </div>
+        <div class="switch">
+            <i class="fas fa-sun"> </i>
+            <span class="switch-track"></span>
+            <i class="fas fa-moon"></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="state-select">
+            <div class="state-select-toggle">
+                <span class="state-select-toggle__state-selected"> Melhores Episódios</span>
+                <i class="fas fa-chevron-down state-select-toggle-icon"></i>
+            </div>
+            <div class="state-select-list">
+                <input type="text" class="state-select-list-search" placeholder="Procurar">
+                <ul>
+                    <li class="state-select-list-item" data-id="melhorEp=true">Melhores episódios</li>
+                    <li class="state-select-list-item" data-id="uf=12">Piores Episódios</li>
+                    <li class="state-select-list-item" data-id="uf=27">Personagens mais populares</li>
+                    <li class="state-select-list-item" data-id="uf=16">Melhor Diretor</li>
+                    <li class="state-select-list-item" data-id="uf=13">Pior Diretor</li>
+                </ul>
+            </div>
+        </div>
+        <section class="status">
+            <div class="status-icon status-icon-better">
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="info">
+                <h2 class="data-box-header">Melhor Episodio</h2>
+                <span class="info-total info-total-better ">Temporada 2</span>
+                <h2 class="info-label info__total--confirmed">Episodio 5</h2>
+            </div>
+        </section>
+        <section class="status ">
+            <div class="status-icon status-icon-better">
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="info">
+                <h2 class="data-box-header">Melhor Episodio</h2>
+                <span class="info-total">Temporada 6</span>
+                <h2 class="info-label">Episodio 8</h2>
+            </div>
+        </section>
+        <section class="status">
+            <div class="status-icon status-icon-better">
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="info">
+                <h2 class="data-box-header">Melhor Episodio</h2>
+                <span class="info-total">Temporada 7</span>
+                <h2 class="info-label">Episodio 1</h2>
+            </div>
+        </section>
+        <section class="status">
+            <div class="status-icon status-icon-bad">
+                <i class="fa-solid fa-heart-crack"></i>
+            </div>
+            <div class="info">
+                <h2 class="data-box-header">Pior Episodio</h2>
+                <span class="info-total">Temporada 7</span>
+                <h2 class="info-label">Episodio 1</h2>
+            </div>
+        </section>
+
+        <!-- <section class="data-box data-box-30">
+            
+            <p class="data-box-description"> Temporada 5</p>
+            <p class="data-box-description"> Episódio 8</p>
+            <div class="data-box-body"></div>
+
+        </section> -->
+
+        <section class="data-box data-box-30">
+            <h2 class="data-box-header">Diretores</h2>
+            <div id="chart">
+            </div>
+            <div class="data-box-body"></div>
+
+        </section>
+        <section class="data-box data-box-30">
+            <h2 class="data-box-header">Personagens mais Populares</h2>
+            <div id="chart02">
+            </div>
+            <div class="data-box-body"></div>
+
+        </section>
+        
+    </div>
+
+    <footer>
+        <div class=”footer-content”>
+            <h3 class="title-footer">Props Props Props Developers</h3>
+            <p class="p-footer">Projeto realizado em grupo para colocar em prática os conhecimentos adquiridos em aula  .</p>
+        </div>
+    </footer>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.27.3/apexcharts.min.js" integrity="sha512-nKTh1Ik8Kzbrxo9A6xOBtEbzdNYcjI4Pr5XE88sNJQk87sY8mBlUfh61lYm0i710r5mGcIZ9tWSwORQbQ4plQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/apexcharts-pt-br.js"></script>
+	<script src="js/apiCovid.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script> 
+    <script>
+        google.charts.load('current', {packages: ['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        google.charts.setOnLoadCallback(drawChart02);
+       
+        function drawChart02(){
+        const data = new google.visualization.arrayToDataTable([
+            ['Personagem','Publico', {role:'style'}],
+            ['Neil Gaiman',80,'green'],
+            ['Sand William',20,'brown']
+        ]);
+
+        const options={
+            width:500,
+            height:400,
+            backgroundColor:'#D4C7AD',
+            legend:{
+               position:'none'
+                
+            }
+            
+           
+        }
+
+        var chart02 = new google.visualization.ColumnChart(document.getElementById('chart02'));
+        chart02.draw(data,options);
+    }
+
+
+        function drawChart(){
+        const data = new google.visualization.DataTable();
+        data.addColumn('string','Diretores');
+        data.addColumn('number','Totais');
+        data.addRows([
+            ['Neil Gaiman',80],
+            ['Sand William',20],
+        ]);
+        const options={
+            title: 'generos no grupo',
+            allowHtml:true,
+            
+            width:500,
+            height:400,
+            colors:['#271631','#6c2224'],
+            is3D:true,
+            backgroundColor:'#D4C7AD',  //#1A1A1A
+            chartArea:{
+                width:'90%',
+                height:'100%',
+                
+            },
+            
+           
+        }
+
+        var chart = new google.visualization.PieChart(document.getElementById('chart'));
+        chart.draw(data,options);
+    }
+    </script>
+
+</body>
+</html>
